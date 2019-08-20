@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
-import 'package:disenos/src/pages/basico_page.dart';
+import 'package:desigens_flutter/src/pages/basic_page.dart';
 
 
 
@@ -20,10 +19,10 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Diseños',
-      initialRoute: 'basico',
+      title: 'Cerbero Designs',
+      initialRoute: 'basic',
       routes: {
-        'basico'  : (BuildContext context ) => BasicoPage(),
+        'basic'  : (BuildContext context ) => BasicPage(),
 
       },
     );
