@@ -6,8 +6,11 @@ class BasicPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Cerbero Dev Page Basic'),
+      body: Column(
+        children: <Widget>[
+        Image(image: ),
+        Text('Cerbero Dev Page Basic'),
+        ] 
       ),
     );
   }
