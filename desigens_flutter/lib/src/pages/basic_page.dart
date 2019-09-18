@@ -14,6 +14,7 @@ class BasicPage extends StatelessWidget {
         children: <Widget>[
         
         _crearImagen(),
+        _crearTitulo(),
 
         ] 
       ),
@@ -25,4 +26,29 @@ class BasicPage extends StatelessWidget {
     image: NetworkImage('https://e.an.amtv.pe/actualidad-ica-municipalidad-restringio-venta-alcohol-semana-santa-n316155-624x352-455486.jpg'),
     );
   }
+
+    Widget _crearTitulo() {
+
+
+  return   Container(
+    padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+    child: Row(
+      children: <Widget>[
+       Expanded(
+         child: Column(
+           crossAxisAlignment: CrossAxisAlignment.start,
+           children: <Widget>[
+             Text('Laguna Huacachina', style: estiloTitulo),
+             SizedBox(height: 7.0,),
+             Text('Ica, Peru', style: estiloSubTitulo)
+           ],
+         ),
+       ), 
+     Icon( Icons.star, color: Colors.yellow, size: 30.0,),
+     Text('41', style: TextStyle( fontSize: 20.0))  
+    ],
+    ),
+  );
+}
+
 }
