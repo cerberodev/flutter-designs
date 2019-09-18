@@ -16,6 +16,11 @@ class BasicPage extends StatelessWidget {
         _crearImagen(),
         _crearTitulo(),
         _crearAcciones(),
+        _crearTexto(),
+        _crearTexto(),
+        _crearTexto(),
+        _crearTexto(),
+        _crearTexto(),
 
         ] 
       ),
@@ -74,5 +79,17 @@ class BasicPage extends StatelessWidget {
           ],
         );
   }
+
+    Widget _crearTexto(){
+
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
+      child: Text(
+        'Cupidatat aute exercitation nisi pariatur reprehenderit pariatur et officia aliqua ex et et aliquip. Esse aliquip tempor sunt reprehenderit magna id. Ea eiusmod qui id fugiat reprehenderit fugiat voluptate. Laboris non qui proident voluptate commodo aute deserunt nulla. Occaecat amet aliquip consequat dolor ea irure ex cillum proident do commodo officia aute.',
+      textAlign: TextAlign.justify,
+      
+      ),
+    );
+  } 
 
 }
