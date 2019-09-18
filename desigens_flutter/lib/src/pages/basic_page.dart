@@ -15,6 +15,7 @@ class BasicPage extends StatelessWidget {
         
         _crearImagen(),
         _crearTitulo(),
+        _crearAcciones(),
 
         ] 
       ),
@@ -51,4 +52,17 @@ class BasicPage extends StatelessWidget {
   );
 }
 
+    Widget _crearAcciones() {
+    return Row (
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget>[
+
+        _accion(  Icons.calendar_today, 'CALL' ),
+        _accion(  Icons.near_me, 'ROUTE'),
+        _accion(  Icons.share, 'SHARE')
+        
+
+    ],
+    );
+  }
 }
