@@ -65,4 +65,14 @@ class BasicPage extends StatelessWidget {
     ],
     );
   }
+
+    Widget _accion(IconData icon, String texto) {
+    return Column(
+          children: <Widget>[
+            Icon( icon, color: Colors.yellow, size: 40.0,),
+            Text( texto, style: TextStyle( fontSize: 15.0, color: Colors.yellow),)
+          ],
+        );
+  }
+
 }
